@@ -1,0 +1,242 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DemoPdf</title>
+    <!-- Fontasome css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style css -->
+    <!-- <link href="/style/demopdf.style.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600&family=Lato:wght@700&family=Noto+Sans+KR:wght@300;400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .container {
+        max-width: 1442px;
+      }
+
+      .main__pdf-wrapper {
+        background-color: aliceblue;
+        height: 100%;
+      }
+      .main__pdf-header {
+        padding: 20px 40px;
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 120, 0.8),
+          rgba(0, 0, 134, 0.5)
+        );
+      }
+      .main__pdf-header .container {
+        display: -webkit-box;
+        display: flex;
+        max-width: 1442px;
+        padding: 10px 40px;
+      }
+
+      .main__pdf-header-left {
+        border-radius: 50%;
+      }
+
+      .main__pdf-body .main__pdf-title{
+        margin-left: 0 !important;
+        margin-bottom: 10px !important;
+      }
+
+      .main__pdf-header-left img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid white;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+
+      .main__pdf-header-right {
+        color: #fff;
+        margin-left: 30%;
+        margin-top: 5%;
+      }
+
+      .main__pdf-username {
+        font-weight: 550;
+        letter-spacing: 1.4px;
+      }
+
+      .main__pdf-jobname {
+        font-size: 18px;
+      }
+
+      .main__pdf-body .container {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 40px;
+      }
+
+      .main__pdf-about {
+        width: 300px;
+        margin-left: 15%;
+      }
+      .main__pdf-about .main__pdf-title {
+        margin-left: 0 !important;
+      }
+
+      .main__pdf-container {
+        margin-top: 20px !important;
+      }
+      .main__pdf-title {
+        color: blueviolet;
+        font-size: 23px;
+        margin-left: 5%;
+        font-weight: 500;
+      }
+
+      .main__pdf-body {
+        margin-top: 20px !important;
+      }
+
+      .main__pdf-description {
+        font-size: 14px;
+      }
+      .main__pdf-contact-info {
+        margin: 10px 0;
+      }
+      .main__pdf-contact-info i {
+        margin-right: 10px;
+        color: blueviolet;
+      }
+
+      .main__pdf-contact-item {
+        font-size: 14px;
+        width: 350px;
+      }
+
+      .main__pdf-univercity {
+        width: 100%;
+      }
+
+      .main__pdf-univercity .container {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 40px;
+      }
+
+      .main__pdf-univ-item {
+        width: 350px;
+        display: inline-block;
+      }
+
+      .main__pdf-univ-item span {
+        color: blueviolet;
+        font-size: 20px;
+        font-weight: 350;
+      }
+
+      .main__pdf-univ-item p span {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main__pdf-wrapper">
+      <div class="main__pdf-header">
+        <div class="container">
+          <div class="main__pdf-header-left">
+            <img
+              src="http://charity.skat.tf/wp-content/uploads/sites/7/2014/02/photodune-1973564-young-beautiful-woman-in-business-wear-at-work-xs.jpg"
+            />
+          </div>
+          <div class="main__pdf-header-right">
+            <h1 class="main__pdf-username">Google Mask</h1>
+            <p class="main__pdf-jobname">Frontend Engineer</p>
+          </div>
+        </div>
+      </div>
+      <div class="main__pdf-body">
+        <div class="container">
+          <div class="main__pdf-contact">
+            <h1 class="main__pdf-title">Aloqa</h1>
+            <div class="main__pdf-contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <span class="main__pdf-contact-item"> +998906947177 </span>
+            </div>
+            <div class="main__pdf-contact-info">
+              <i class="fa-solid fa-at"></i>
+              <span class="main__pdf-contact-item"> sitelabs@gmail.com </span>
+            </div>
+            <div class="main__pdf-contact-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="main__pdf-contact-item">
+                Namangan shahar Boburshoh ko'chasi 43-uy
+              </span>
+            </div>
+          </div>
+
+          <div class="main__pdf-about">
+            <h1 class="main__pdf-title">Men Haqimda</h1>
+            <p class="main__pdf-description">
+              Men Google Mask oldin Google da ishlaganman undan oldin esa
+              o'zimcha nimalardir qilganman
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main__pdf-container">
+        <div class="main__pdf-body-header">
+          <div class="container">
+            <h1 class="main__pdf-title">Ta'lim yo'nalishi</h1>
+          </div>
+        </div>
+        <div class="main__pdf-univercity">
+          <div class="container">
+            <div class="main__pdf-univ-item">
+              <span>Bakalavriyat Web Dasturchilik</span>
+              <p>Namangan Davlat Universiteti</p>
+              <p>Bitirilgan yil <span>2035-2045</span></p>
+            </div>
+            <div class="main__pdf-univ-item">
+              <span>Bakalavriyat Web Dasturchilik</span>
+              <p>Namangan Davlat Universiteti</p>
+              <p>Bitirilgan yil <span>2035-2045</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__pdf-container">
+        <div class="main__pdf-body-header">
+          <div class="container">
+            <h1 class="main__pdf-title">Tajriba</h1>
+          </div>
+        </div>
+        <div class="main__pdf-univercity">
+          <div class="container">
+            <div class="main__pdf-univ-item">
+              <span>Frontend Developer</span>
+              <p>IT-Park vodiysi</p>
+              <p>Ish muddati <span>2035-2045</span></p>
+            </div>
+            <div class="main__pdf-univ-item">
+              <span>Mobile developer</span>
+              <p>Mobile International IT</p>
+              <p>Ish muddati <span>2035-2045</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

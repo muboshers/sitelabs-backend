@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(203, 217, 219);
+      }
+
+      .navbar {
+        background-color: rgb(27, 3, 3);
+        padding: 10px 20px;
+        border-radius: 5px;
+        min-height: 500px;
+        width: 992px;
+        margin: 100px auto;
+        position: relative;
+        display: flex;
+      }
+
+      .navbar__letfside {
+        flex: 0.5;
+      }
+
+      .navbar__leftside img {
+        height: 100px;
+      }
+      .navbar__rightside {
+        top: 40%;
+        margin-top: 25%;
+        position: absolute;
+        color: #fff;
+        width: 50%;
+        left: 30%;
+        margin-left: 10%;
+      }
+
+      .navbar__rightside h1 {
+        font-size: 20px;
+        letter-spacing: 0.45px;
+      }
+
+      .navbar__rightside p,
+      h4 {
+        color: lightgray;
+      }
+
+      @media screen and (max-width:768px) {
+            .navbar {
+                max-width: 100% !important;
+            }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__leftside">
+        <img
+          src="https://sitelabs.vercel.app/static/media/logo.e54a09ff9b95177251e4.png"
+          alt="logo"
+        />
+      </div>
+
+      <div class="navbar__rightside">
+        <h1>{{title}}</h1>
+        <p>
+            {{text}}
+        </p>
+      </div>
+    </div>
+  </body>
