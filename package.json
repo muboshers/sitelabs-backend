@@ -4,6 +4,9 @@
   "description": "This project backend for sitelabs it company in uzbekisatn",
   "main": "index.js",
   "type": "module",
+  "engines":{
+    "node":"16.x"
+   },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
